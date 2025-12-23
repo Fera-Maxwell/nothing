@@ -17,9 +17,9 @@ clear
 TMPDIR=$(mktemp -d)
 trap 'rm -rf "$TMPDIR"' EXIT
 
-curl -L "https://github.com/Fera-Maxwell/nothing/raw/refs/heads/main/viu" -o "$TMPDIR/viu"
+curl -sL "https://github.com/Fera-Maxwell/nothing/raw/refs/heads/main/viu" -o "$TMPDIR/viu"
 chmod +x "$TMPDIR/viu"
 
-curl -L "https://github.com/Fera-Maxwell/nothing/blob/main/boykisser.gif?raw=true" -o "$TMPDIR/boykisser.gif"
+curl -sL "https://github.com/Fera-Maxwell/nothing/blob/main/boykisser.gif?raw=true" -o "$TMPDIR/boykisser.gif"
 
 "$TMPDIR/viu" "$TMPDIR/boykisser.gif" -a -x 0 -y 0 -w "$(tput cols)" -f 14
