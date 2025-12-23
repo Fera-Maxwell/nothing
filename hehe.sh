@@ -7,7 +7,7 @@ echo "F R E E    G A Y    B O Y K I S S E R S"
 echo "I N    Y O U R    A R E A ! ! !"
 echo
 echo "(PRESS ENTER)"
-read
+read </dev/tty
 
 clear
 
